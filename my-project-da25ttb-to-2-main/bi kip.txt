@@ -1,0 +1,11 @@
+echo "# duan240526-to1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M mainKaze
+git remote add origin https://github.com/KazeKazeeee/duan240526-to1.git
+git push -u origin mainKaze
+…or push an existing repository from the command line
+git remote add origin https://github.com/KazeKazeeee/duan240526-to1.git
+git branch -M mainKaze
+git push -u origin mainKaze
