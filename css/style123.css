@@ -1,0 +1,222 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 23px;
+  background-color: #eef4e3;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 16px 60px;
+  color: #333;
+}
+
+
+.card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 24px rgba(80, 130, 60, 0.13);
+  width: 100%;
+  max-width: 840px;
+  overflow: hidden;
+}
+
+
+.card-header {
+  background: linear-gradient(135deg, #418002 0%, #418002 100%);
+  padding: 22px 36px;
+  text-align: center;
+
+}
+
+.card-header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0.3px;
+}
+
+
+.card-body {
+  padding: 32px 36px 28px;
+}
+
+
+.form-group {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  gap: 12px;
+}
+
+.form-group label:first-child {
+  min-width: 130px;
+  padding-top: 8px;
+  font-weight: 500;
+  color: #3a5a28;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  border-bottom: 1.5px solid #b0cc88;
+  border-radius: 0;
+  background: transparent;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border-bottom-color: #000000;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #00000046;
+}
+
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  cursor: pointer;
+}
+
+
+textarea {
+  resize: vertical;
+  border: 1.5px solid #000000;
+  border-radius: 6px;
+  padding: 10px 12px;
+  line-height: 1.5;
+}
+
+textarea:focus {
+  border-color: #000000;
+}
+
+
+input[type="file"] {
+  border: none;
+  padding: 4px 0;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+}
+
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 6px;
+}
+
+.radio-label,
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  color: #444;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio-label input[type="radio"],
+.checkbox-label input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: #6aaa40;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.btn {
+  padding: 9px 32px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-cancel {
+  background-color: #a0bb7a;
+  color: #2c4a1a;
+}
+
+.btn-cancel:hover {
+  background-color: #8caa60;
+}
+
+.btn-submit {
+  background-color: #6aaa40;
+  color: #ffffff;
+}
+
+.btn-submit:hover {
+  background-color: #568f32;
+}
+
+
+@media (max-width: 480px) {
+  .card-body {
+    padding: 24px 18px 20px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .form-group label:first-child {
+    text-align: right;
+    padding-top: 0;
+    min-width: unset;
+  }
+
+  .checkbox-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

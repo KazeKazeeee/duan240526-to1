@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  
+  <title>Thông tin đăng ký</title>
+  <link href="../css/style123.css" rel="stylesheet" >
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-header">
+      <h1>Thông tin đăng ký</h1>
+    </div>
+
+    <form class="card-body" onsubmit="handleSubmit(event)">
+
+      <div class="form-group">
+        <label for="hoten">Họ tên:</label>
+        <input type="text" id="hoten" name="hoten" placeholder="Nhập họ tên" required />
+      </div>
+
+      <div class="form-group">
+        <label for="ngaysinh">Ngày sinh:</label>
+        <input type="date" id="ngaysinh" name="ngaysinh" required />
+      </div>
+
+      <div class="form-group">
+        <label>Giới tính:</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="gioitinh" value="Nam" /> Nam
+          </label>
+          <label class="radio-label">
+            <input type="radio" name="gioitinh" value="Nu" /> Nữ
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="diachi">Địa chỉ:</label>
+        <input type="text" id="diachi" name="diachi" placeholder="Nhập địa chỉ" />
+      </div>
+
+      <div class="form-group">
+        <label for="mssv">MSSV:</label>
+        <input type="text" id="mssv" name="mssv" placeholder="Nhập mã số sinh viên" required />
+      </div>
+
+      <div class="form-group">
+        <label for="lop">Lớp:</label>
+        <select id="lop" name="lop">
+		  <option value="DA25TTA">DA25TTA</option>
+          <option value="DA25TTB">DA25TTB</option>
+          <option value="DA25TTC">DA25TTC</option>
+          <option value="DA25TTD">DA25TTD</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="sdt">Số điện thoại:</label>
+        <input type="tel" id="sdt" name="sdt" placeholder="Nhập số điện thoại" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Nhập email" />
+      </div>
+
+      <div class="form-group">
+        <label for="avatar">Ảnh đại diện:</label>
+        <input type="file" id="avatar" name="avatar" accept="image/*" />
+      </div>
+
+      <div class="form-group">
+        <label>Sở trường:</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="sotruong" value="thietkeweb" /> Thiết kế web
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="sotruong" value="laptrinh" /> Lập trình web
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="sotruong" value="tiengtrung" /> Thành thạo tiếng Trung
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="mota">Mô tả sơ lược:</label>
+        <textarea id="mota" name="mota" rows="5" placeholder="Nhập mô tả sơ lược về bản thân..."></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="reset" class="btn btn-cancel">Hủy bỏ</button>
+        <button type="submit" class="btn btn-submit">Đăng ký</button>
+      </div>
+
+    </form>
+  </div>
+
+  
+
+</body>
+</html>
