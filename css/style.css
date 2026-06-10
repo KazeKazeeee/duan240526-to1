@@ -103,4 +103,26 @@ li:hover{
 
 	
 }
+div.links {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #F5DEB3;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+.footer {
+    margin-top: 25px;
+    font-size: 13px;
+    opacity: 0.8;
+    text-align: center;
+    background-color: #20c3ce;
+    color: white;
+    padding: 10px;
+    
+}
 
