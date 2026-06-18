@@ -4,7 +4,7 @@ const products = [
         price: "10.000đ",
         image: "../assets/images/tailoc.jpg",
         info: "uong qua da",
-        link: "#"
+        link: "../html/sp1.html"
     },
     {
         name: "sting",
